@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechMart | Your Technology Store</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark tech-navbar sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand tech-logo" href="index.html">
+            <i class="bi bi-cpu-fill"></i>
+            Tech<span>Mart</span>
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#categories">Categories</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+            <div class="navbar-actions">
+                <button class="icon-btn" id="searchBtn" title="Search">
+                    <i class="bi bi-search"></i>
+                </button>
+
+                <button class="icon-btn cart-btn" id="cartBtn" title="Cart">
+                    <i class="bi bi-cart3"></i>
+                    <span id="cartCount">0</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- ================= SEARCH BOX ================= -->
+
+<div class="search-area" id="searchArea">
+
+    <div class="container">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search mobiles, laptops, headphones..."
+            >
+
+            <button id="closeSearch">
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 hero-content">
+
+                <div class="hero-badge">
+                    <i class="bi bi-lightning-charge-fill"></i>
+                    Latest Technology at Best Prices
+                </div>
+
+                <h1>
+                    Upgrade Your
+                    <span>Digital Life</span>
+                </h1>
+
+                <p>
+                    Discover the latest smartphones, laptops, headphones
+                    and smart gadgets — all in one place.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#products" class="btn shop-btn">
+                        Shop Now
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a href="#categories" class="btn explore-btn">
+                        Explore Categories
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <h4>500+</h4>
+                        <p>Products</p>
+                    </div>
+
+                    <div>
+                        <h4>10K+</h4>
+                        <p>Customers</p>
+                    </div>
+
+                    <div>
+                        <h4>4.8★</h4>
+                        <p>Rating</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="hero-device">
+
+                    <div class="glow-circle"></div>
+
+                    <div class="laptop-card">
+
+                        <div class="laptop-screen">
+
+                            <div class="screen-top">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="screen-content">
+
+                                <i class="bi bi-cpu-fill"></i>
+
+                                <h3>TECHMART</h3>
+
+                                <p>Future is Digital</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="laptop-base"></div>
+
+                    </div>
+
+                    <div class="floating-icon icon-phone">
+                        <i class="bi bi-phone"></i>
+                    </div>
+
+                    <div class="floating-icon icon-headphone">
+                        <i class="bi bi-headphones"></i>
+                    </div>
+
+                    <div class="floating-icon icon-watch">
+                        <i class="bi bi-smartwatch"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories-section" id="categories">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>SHOP BY CATEGORY</span>
+
+            <h2>Explore Our Categories</h2>
+
+            <p>
+                Find the perfect technology for your everyday needs.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-6 col-md-3">
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+                        <i class="bi bi-phone-fill"></i>
+                    </div>
+
+                    <h5>Smartphones</h5>
+
+                    <p>120+ Products</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+                        <i class="bi bi-laptop"></i>
+                    </div>
+
+                    <h5>Laptops</h5>
+
+                    <p>80+ Products</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+                        <i class="bi bi-headphones"></i>
+                    </div>
+
+                    <h5>Headphones</h5>
+
+                    <p>100+ Products</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+                        <i class="bi bi-smartwatch"></i>
+                    </div>
+
+                    <h5>Smart Watches</h5>
+
+                    <p>60+ Products</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products-section" id="products">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>POPULAR PRODUCTS</span>
+
+            <h2>Featured Technology</h2>
+
+            <p>
+                Check out some of our most popular products.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="product-card">
+
+                    <div class="product-image phone-product">
+                        <i class="bi bi-phone-fill"></i>
+
+                        <span class="product-badge">NEW</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <small>SMARTPHONE</small>
+
+                        <h5>ProMax X Smartphone</h5>
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>(128)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <strong>₹49,999</strong>
+
+                            <button
+                                class="add-cart"
+                                data-product="ProMax X Smartphone"
+                            >
+                                <i class="bi bi-cart-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="product-card">
+
+                    <div class="product-image laptop-product">
+                        <i class="bi bi-laptop"></i>
+
+                        <span class="product-badge sale">SALE</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <small>LAPTOP</small>
+
+                        <h5>UltraBook Pro 15</h5>
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>(96)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <strong>₹69,999</strong>
+
+                            <button
+                                class="add-cart"
+                                data-product="UltraBook Pro 15"
+                            >
+                                <i class="bi bi-cart-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="product-card">
+
+                    <div class="product-image headphone-product">
+                        <i class="bi bi-headphones"></i>
+
+                        <span class="product-badge">HOT</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <small>AUDIO</small>
+
+                        <h5>NoiseCancel Pro</h5>
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>(214)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <strong>₹7,999</strong>
+
+                            <button
+                                class="add-cart"
+                                data-product="NoiseCancel Pro"
+                            >
+                                <i class="bi bi-cart-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="product-card">
+
+                    <div class="product-image watch-product">
+                        <i class="bi bi-smartwatch"></i>
+
+                        <span class="product-badge">NEW</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <small>WEARABLE</small>
+
+                        <h5>SmartWatch S5</h5>
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>(74)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <strong>₹4,499</strong>
+
+                            <button
+                                class="add-cart"
+                                data-product="SmartWatch S5"
+                            >
+                                <i class="bi bi-cart-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="view-all-wrapper">
+
+            <button class="view-all-btn">
+                View All Products
+                <i class="bi bi-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= OFFER BANNER ================= -->
+
+<section class="offer-section">
+
+    <div class="container">
+
+        <div class="offer-box">
+
+            <div>
+
+                <span>LIMITED TIME OFFER</span>
+
+                <h2>Get up to 30% OFF</h2>
+
+                <p>
+                    Upgrade your gadgets today and save more.
+                </p>
+
+                <a href="#products" class="btn offer-btn">
+                    Shop Offers
+                </a>
+
+            </div>
+
+            <div class="offer-icon">
+                <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <div class="about-visual">
+
+                    <div class="about-circle">
+                        <i class="bi bi-cpu-fill"></i>
+                    </div>
+
+                    <div class="experience-box">
+
+                        <strong>5+</strong>
+
+                        <span>
+                            Years of
+                            <br>
+                            Experience
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="about-content">
+
+                    <span>ABOUT TECHMART</span>
+
+                    <h2>
+                        Technology Made
+                        <strong>Simple.</strong>
+                    </h2>
+
+                    <p>
+                        TechMart is a modern online electronics store
+                        designed to provide customers with quality
+                        technology products at competitive prices.
+                    </p>
+
+                    <p>
+                        Our goal is to make shopping for technology
+                        simple, convenient and enjoyable.
+                    </p>
+
+                    <div class="about-features">
+
+                        <div>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Quality Products
+                        </div>
+
+                        <div>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Secure Shopping
+                        </div>
+
+                        <div>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Fast Delivery
+                        </div>
+
+                        <div>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Customer Support
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>GET IN TOUCH</span>
+
+            <h2>Contact TechMart</h2>
+
+            <p>
+                Have a question? We would love to hear from you.
+            </p>
+
+        </div>
+
+
+        <div class="contact-box">
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="contact-item">
+
+                        <i class="bi bi-envelope-fill"></i>
+
+                        <div>
+                            <h5>Email</h5>
+                            <p>support@techmart.com</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="contact-item">
+
+                        <i class="bi bi-telephone-fill"></i>
+
+                        <div>
+                            <h5>Phone</h5>
+                            <p>+91 98765 43210</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="contact-item">
+
+                        <i class="bi bi-geo-alt-fill"></i>
+
+                        <div>
+                            <h5>Location</h5>
+                            <p>Lucknow, India</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <a class="footer-logo" href="#">
+                    <i class="bi bi-cpu-fill"></i>
+                    Tech<span>Mart</span>
+                </a>
+
+                <p>
+                    Your trusted destination for modern technology
+                    and smart gadgets.
+                </p>
+
+            </div>
+
+
+            <div class="col-6 col-lg-2">
+
+                <h5>Quick Links</h5>
+
+                <a href="#">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="col-6 col-lg-2">
+
+                <h5>Categories</h5>
+
+                <a href="#">Mobiles</a>
+                <a href="#">Laptops</a>
+                <a href="#">Audio</a>
+                <a href="#">Wearables</a>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <h5>Follow Us</h5>
+
+                <div class="social-links">
+
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 TechMart. All Rights Reserved.
+            </p>
+
+            <p>
+                Designed for Web Development Project
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Cart Toast -->
+
+<div class="cart-toast" id="cartToast">
+    <i class="bi bi-check-circle-fill"></i>
+    <span>Product added to cart!</span>
+</div>
+
+
+<!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- Custom JS -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
